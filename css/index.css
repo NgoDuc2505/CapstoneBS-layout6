@@ -1,0 +1,8 @@
+/* ====GLOBAL */
+body, html{
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: #c2d0da;
+    font-family: 'Quicksand', sans-serif;
+}
