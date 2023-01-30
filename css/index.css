@@ -6,3 +6,67 @@ body, html{
     color: #c2d0da;
     font-family: 'Quicksand', sans-serif;
 }
+
+/* ====header */
+header{
+    background-color: rgba(255, 166, 0, 0.6);
+}
+  .topnav #myLinks {
+    opacity: 0;
+    transition: all .5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  .topnav #myLinks .iconClose{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    font-size: 1.95em;
+    display: block;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navright{
+    display: flex;
+    align-items: center;
+  }
+  .navleft a{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .contentInside{
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    z-index: -1;
+  }
+  .contentInside .iconClose{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .light-darkTheme a{
+    font-size: 20px;
+  }
