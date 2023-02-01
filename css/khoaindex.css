@@ -9,6 +9,7 @@ a, a:hover{
     letter-spacing: 1px;
     color:  #ff6600;
     font-family: 'Pacifico', cursive;
+    text-align: center;
 }
 
 .secondary_title{
@@ -17,6 +18,7 @@ a, a:hover{
     font-weight: 600;
     color: #232121;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .primary_paragraph{

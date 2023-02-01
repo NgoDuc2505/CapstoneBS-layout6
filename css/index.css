@@ -114,7 +114,7 @@ header {
 
 /* Light theme */
 #myBody {
-  background-color: black;
+  background-color: white;
 }
 #switchButton .fa-sun {
   display: none;
@@ -125,9 +125,14 @@ header {
 }
 /* Dark Theme*/
 .dark#myBody {
-  background-color: white;
+  background-color:black;
 }
-
+.dark p{
+  color: #fff;
+}
+.dark h3{
+  color: #c9d0d5;
+}
 .dark #switchButton .fa-sun {
   display: block;
   color: white;
@@ -135,10 +140,7 @@ header {
 .dark #switchButton .fa-moon {
   display: none;
 }
-.dark .card {
-  background-color: black;
-  color: white;
-}
+
 
 /* ====END OF LIGHT DARK THEME */
 /* ====search */
@@ -263,4 +265,86 @@ hr {
 }
 .footer__sub span a:hover {
   color: #c2d0da;
+}
+/* ====TESTIMONIAL */
+.Testimonial{
+  padding: 3rem 0;
+}
+.dark .Testimonial{
+  background-color: rgb(45, 45, 45);
+}
+.dark .person__comment h3, .dark .person__comment h4{
+  color: #ff6600!important;
+}
+.testimonial__title{
+  margin: 0 0 50px;
+}
+.person{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  max-width: 700px;
+}
+.person a{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ff6600;
+}
+.person a img{
+  width: 100%;
+}
+.person i{
+  font-size: 25px;
+  color: #ff6600;
+}
+#myBody .Testimonial .swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+}
+#myBody .Testimonial .swiper-pagination-bullet:hover{
+  background-color: #ff6600;
+  opacity: 1;
+}
+#myBody .Testimonial .swiper-pagination-bullet-active{
+  background-color: #ff6600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 577px) {
+  .first__footer__container{
+    width: 90%;
+    padding: 0 auto;
+  }
+}
+@media screen  and (max-width: 993px){
+  .footer__sub{
+    text-align: center;
+  }
 }
