@@ -388,3 +388,81 @@ a, a:hover{
 .blog_read_more:hover a, .blog_read_more:hover span{
     color: #ff6600;
 }
+
+/* Carousel CSS */
+.carousel{
+    max-width: 600px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.carousel h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px){
+    .carousel h3{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 992px){
+    .carousel h3{
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+   
+@media (max-width: 1190px){
+    .carousel h3{
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.carousel p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.btn-white{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+
+.btn-white:hover{
+    color: #ff6600;
+    background: white;
+}
+
+header{
+    background-color: transparent;
+    background-size: cover;
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
+@media (max-width: 800px){
+    header {
+        min-height: 600px;
+        margin-top: 60px;
+    }
+}   
