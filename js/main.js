@@ -10,3 +10,6 @@ function myFunction() {
       x.style.scale = "100%"
     }
   }
+  document.getElementById("switchButton").onclick = function () {
+    document.getElementById("myBody").classList.toggle("dark");
+};
