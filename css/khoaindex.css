@@ -60,8 +60,6 @@ a, a:hover{
         line-height: 40px;
     }
 }
-
-
 /* About us css */
 
 
@@ -406,14 +404,12 @@ a, a:hover{
     color: #fff;
     margin-bottom: 10px;
 }
-
-@media (max-width: 800px){
+@media (max-width: 1190px){
     .carousel h3{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 48px;
+        line-height: 58px;
     }
 }
-
 @media (max-width: 992px){
     .carousel h3{
         font-size: 44px;
@@ -421,13 +417,18 @@ a, a:hover{
     }
 }
    
-@media (max-width: 1190px){
+@media (max-width: 800px){
     .carousel h3{
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 40px;
+        line-height: 50px;
     }
 }
-
+@media (max-width: 480.98px) {
+    .carousel h3{
+      font-size: 28px;
+      line-height: 38px;
+    }
+}
 .carousel p{
     font-size: 16px;
     line-height: 28px;
