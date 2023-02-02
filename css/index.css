@@ -7,6 +7,7 @@ html {
   color: #c2d0da;
   font-family: 'Quicksand', sans-serif;
 }
+/* -Overlay in 324 line <----------====------====-------*/
 
 /* ====header */
 header {
@@ -313,13 +314,125 @@ hr {
 #myBody .Testimonial .swiper-pagination-bullet-active{
   background-color: #ff6600;
 }
-
-
-
-
-
-
-
+/* ====DRLICIOUS */
+.Deli__carousel{
+  background-image: url('/img/layout6-img10.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 15px;
+  position: relative;
+}
+.Deli__carousel::before, .videoVimeo::before{       /*---- Overlay here -----*/
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 0;
+}
+.deli__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.deli__content h3{
+  font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.deli__content button{
+  padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    background-color: unset;
+    color: white;
+    border: 2px white solid;
+}
+.btnGroup .btnOrange{
+  background-color: #ff6600;
+  border: 2px solid transparent;
+  margin-left: 30px;
+}
+.deli__item{
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    padding: 40px 20px;
+    border-radius: 6px;
+    background-color: white;
+    font-weight: 600;
+    color: #161c2db3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deli__item span i{
+  font-size: 26px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    color: #fff;
+    text-align: center;
+    background-color: #ff6600;
+}
+.countUpDeli{
+  font-size: 2.6em;
+  font-weight: 600;
+  color: black;
+}
+.deli__detail{
+  margin-top: -70px;
+}
+/* ===MAGNIFIC VIDEO==== */
+.videoVimeo{
+  background-image: url(/img/layout6-img03.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.playBtn{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 80px;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.playBtn a{
+  display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #ff6600;
+    animation: zoomPlayShadow 1s linear infinite;
+    transition: all .3s ease-in-out;
+}
+.playBtn a:hover{
+  scale: 120%;
+  color: #fff;
+  background-color: #ff6600;
+}
 
 
 
@@ -347,4 +460,17 @@ hr {
   .footer__sub{
     text-align: center;
   }
+}
+
+@keyframes zoomPlayShadow {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+     0 0 0 10px rgb(255 255 255 / 25%), 
+     0 0 0 20px rgb(255 255 255 / 25%);
+}
+100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+     0 0 0 20px rgb(255 255 255 / 25%),
+      0 0 0 40px rgb(50 100 245 / 0%);
+}
 }
