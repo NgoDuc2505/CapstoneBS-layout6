@@ -68,7 +68,9 @@ a, a:hover{
     background-color: #ff6600;
     color: #ffdfc9;
 }
-
+.dark .Statistic{
+    background-color: #ff6600ba;
+}
 .statistic_img{
     background: url(../img/banner3.jpg) no-repeat center;
     background-size: cover;
@@ -156,6 +158,9 @@ a, a:hover{
 /* News css */
 .News{
     background: #f7f7f7;
+}
+.dark .News{
+    background-color: rgb(45, 45, 45);
 }
 .news-img{
     position: relative;
@@ -282,6 +287,9 @@ a, a:hover{
 }
 
 /* BLOG CSS */
+.Blog{
+    background-color: #f7f7f7;
+}
 .blog-card{
     word-wrap: break-word;
     background-color: transparent;
@@ -342,7 +350,9 @@ a, a:hover{
     margin-bottom: 15px;
     transition: .3s ease;
 }
-
+.dark .blog_desc{
+    color: #ff6600;
+}
 @media (max-width: 991px){
     .blog_desc {
         font-size: 20px;
@@ -365,7 +375,9 @@ a, a:hover{
     color: #232121;
     letter-spacing: .02em;
 }
-
+.dark .blog_footer_ava a{
+    color: gray;
+}
 .post_img{
     margin-right: 10px;
     width: 40px;
@@ -424,7 +436,7 @@ a, a:hover{
     }
 }
 @media (max-width: 480.98px) {
-    .carousel h3{
+    .carousel h3, .deli__content h3{
       font-size: 28px;
       line-height: 38px;
     }

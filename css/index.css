@@ -126,7 +126,7 @@ header {
 
 #switchButton .fa-moon {
   display: block;
-  color: black;
+  color: white;
 }
 
 /* Dark Theme*/
@@ -144,7 +144,7 @@ header {
 
 .dark #switchButton .fa-sun {
   display: block;
-  color: white;
+  color: #232220;
 }
 
 .dark #switchButton .fa-moon {
@@ -165,7 +165,7 @@ header {
   border-radius: 5px;
   border: none;
   outline: none;
-  background-color: #232220;
+  background-color: #fff;
   color: #c2d0da;
 }
 
@@ -359,6 +359,12 @@ hr {
 }
 
 /* ====DRLICIOUS */
+.Deliciousness{
+  padding-bottom: 5rem;
+}
+.dark .Deliciousness{
+  background-color: rgb(45, 45, 45);
+}
 .Deli__carousel {
   background-image: url('/img/layout6-img10.jpg');
   background-size: cover;
@@ -409,16 +415,25 @@ hr {
   background-color: unset;
   color: white;
   border: 2px white solid;
+  transition: all .5s;
 }
-
+.deli__content button:hover{
+  color: #ff6600;
+  background-color: #fff;
+}
 .btnGroup .btnOrange {
   background-color: #ff6600;
   border: 2px solid transparent;
   margin-left: 30px;
+  transition: all .5s;
+}
+.btnGroup .btnOrange:hover{
+  background-color: #ff6600af;
+  color: #fff;
 }
 
 .deli__item {
-  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 20px 0px;
   padding: 40px 20px;
   border-radius: 6px;
   background-color: white;
@@ -427,6 +442,15 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all .5s;
+  height: 100%;
+}
+.deli__item:hover{
+  transform: translateY(-7px);
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 20px 10px;
+}
+.dark .deli__item{
+  box-shadow: rgb(0 0 0) 1px 1px 20px 0px;
 }
 
 .deli__item span i {
@@ -438,6 +462,9 @@ hr {
   color: #fff;
   text-align: center;
   background-color: #ff6600;
+}
+.dark .deli__item p{
+  color: #232220;
 }
 
 .countUpDeli {
@@ -493,40 +520,41 @@ hr {
   background-color: #ff6600;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 577px) {
+@media (max-width: 993px) {
+  .footer__sub {
+    text-align: center;
+  }
+}
+@media (max-width: 993px){
+  .deli__detail{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 577px) {
   .first__footer__container {
     width: 90%;
     padding: 0 auto;
   }
 }
-
-@media screen and (max-width: 993px) {
-  .footer__sub {
-    text-align: center;
+@media (max-width: 456px) {
+ .Deliciousness .btnGroup button{
+  padding: 10px 21px;
+ }
+}
+@media (max-width:348px) {
+  .Deliciousness .btnGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Deliciousness .btnGroup button{
+    padding: 12px 45px;
+  }
+  .Deliciousness .btnOrange{
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
-@media screen and (max-width: 993px){
-  .deli__detail{
-    margin-top: 50px;
-  }
-}
-
 
 @keyframes zoomPlayShadow {
   0% {
