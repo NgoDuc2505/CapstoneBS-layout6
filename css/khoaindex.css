@@ -290,6 +290,9 @@ a, a:hover{
 .Blog{
     background-color: #f7f7f7;
 }
+.dark .Blog{
+    background-color: black;
+}
 .blog-card{
     word-wrap: break-word;
     background-color: transparent;
@@ -297,7 +300,6 @@ a, a:hover{
     border: none;
     border-radius: 0;
 }
-
 .blog_card_header{
     position: relative;
     border: none;
