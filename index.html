@@ -15,20 +15,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- ====BOOSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- ====SWIPER BUNDLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/Magnific.css">
     <!-- ====MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/khoaindex.css">
 </head>
 
-<body>
+<body id="myBody">
     <header>
         <div class="container">
             <div class="topnav">
                 <div class="navleft"><a href="#home" class="active">Diner</a></div>
                 <div class="navright">
                     <form class="form-inline ">
-                        <input class="searchTab" type="search" placeholder="Search here..">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="searchTab d-sm-block d-none" type="search" placeholder="Search here..">
+                        <i class="fa-solid fa-magnifying-glass d-sm-block d-none"></i>
                     </form>
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks" class="LinkNav">
@@ -46,43 +50,53 @@
                                 <SPan>X</SPan>
                             </a>
                         </div>
-                       
+
                     </div>
                     <div class="light-darkTheme">
-                        <a href="#"><i class="fa-regular fa-sun"></i></a>
+                        <button class="btnon" id="switchButton" title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                        </button>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a href="javascript:void(0);" class="icon" id="iconPlus" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
-    
-    
+
+
             </div>
             <div class="carousel">
                 <h3 class="mb-4">The only thing we love more than food is you!</h3>
-                <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+                <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
+                    sit.Ea
                     ipsum sed consequuntur illum facere.
-                  </p>
+                </p>
 
                 <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">Read More
                     <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span>
                 </a>
             </div>
         </div>
-       
+
     </header>
     <section class="AboutUs py-5">
         <div class="container py-md-5">
             <div class="d-flex row align-items-baseline justify-content-between">
                 <div class="col-lg-5">
                     <div class="aboutus__title">
-                        <h6 class="primary_title">About Us</h6>
-                        <h3 class="secondary_title mb-4">We found our creative space that is open for you.</h3>
+                        <h6 class="primary_title text-left">About Us</h6>
+                        <h3 class="secondary_title text-left mb-4">We found our creative space that is open for you.
+                        </h3>
                     </div>
                 </div>
                 <div class="primary_paragraph col-lg-7 pt-lg-5 mt-lg-0 mt-3">
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor
+                        sit.</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet.</p>
                 </div>
             </div>
         </div>
@@ -98,7 +112,8 @@
                         <h6 class="primary_title reverse">More than 3000 Restaurants</h6>
                         <h3 class="secondary_title reverse">Book a table easly at the best price</h3>
                         <p class="my-3">
-                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet
+                            mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
                         </p>
                         <div class="statistic_best mt-5">
                             <div class="best_section">
@@ -140,7 +155,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Vegetarian</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$350</h6>
@@ -154,7 +169,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Drinks</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$550</h6>
@@ -168,7 +183,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Lunch</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$650</h6>
@@ -182,7 +197,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Bakery</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$550</h6>
@@ -196,7 +211,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Desserts</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$750</h6>
@@ -210,7 +225,7 @@
                         </a>
                     </div>
                     <div class="news-info p-md-5 p-4">
-                        <a href="#"> 
+                        <a href="#">
                             <h4 class="mt-sm-2 mt-1">Pizza</h4>
                         </a>
                         <h6 class="mt-sm-2 mt-1">$850</h6>
@@ -224,6 +239,7 @@
         <div class="container py-lg-5 py-md-3 py-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
+
                     <div class="items-box">
                         <div class="d-flex">
                             <div class="icon">
@@ -236,7 +252,7 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
                     <div class="items-box">
@@ -251,7 +267,7 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
                     <div class="items-box">
@@ -266,7 +282,7 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                     <div class="items-box">
@@ -281,7 +297,7 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                     <div class="items-box">
@@ -296,7 +312,7 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                     <div class="items-box">
@@ -311,12 +327,74 @@
                         </div>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="Deliciousness"></section>
+    <section class="Deliciousness">
+        <div class="Deli__carousel">
+            <div class="deli__content">
+                <h3>Deliciousness jumping into the mouth.</h3>
+                <div class="btnGroup pb-5">
+                    <button>Read More <i class="fa-solid fa-chevron-right"></i></button>
+                    <button class="btnOrange">Contact Us <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="deli__detail mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 mt-md-0 mt-4">
+                        <div class="deli__item">
+                            <span><i class="fa-regular fa-building"></i></span>
+                            <div class="countUpDeli mt-3 counter">15,100</div>
+                            <p>Branches</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mt-md-0 mt-4">
+                        <div class="deli__item">
+                            <span><i class="fa-solid fa-utensils"></i></span>
+                            <div class="countUpDeli mt-3 counter">19,256</div>
+                            <p>Food Items</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mt-md-0 mt-4">
+                        <div class="deli__item">
+                            <span><i class="fa-solid fa-users"></i></span>
+                            <div class="countUpDeli mt-3 counter">12,100</div>
+                            <p>Chefs</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mt-md-0 mt-4">
+                        <div class="deli__item">
+                            <span><i class="fa-regular fa-face-smile"></i></span>
+                            <div class="countUpDeli mt-3 counter">2,560</div>
+                            <p class="text-center">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deli__video mt-5">
+            <div class="container ">
+                <div class="videoVimeo">
+                    <!-- <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
+                    <div class="playBtn">
+                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                          </div>
+                    </div>
+                    <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                        <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="Blog py-5">
         <div class="container py-md-5 py-2">
             <div class="text-center">
@@ -330,18 +408,19 @@
                             <a class="blog_card_image" href="#">
                                 <img src="./img/banner1.jpg" alt="">
                             </a>
-                        <div class="blog_card_header_info">
-                            <a href="#">Reciepe</a>
-                            <span class="blog_card_icon">
-                                <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
-                                10 Min Cook
-                            </span>
-                        </div>
+                            <div class="blog_card_header_info">
+                                <a href="#">Reciepe</a>
+                                <span class="blog_card_icon">
+                                    <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
+                                    10 Min Cook
+                                </span>
+                            </div>
                         </div>
                         <div class="blog_card_body p-0">
                             <a href="#" class="blog_desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
-                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                vitae sit.</p>
                             <div class="blog_footer">
                                 <div class="blog_footer_ava">
                                     <a href="#"><img src="./img/team1.jpg" alt="" class="post_img img img-fluid"></a>
@@ -361,18 +440,19 @@
                             <a class="blog_card_image" href="#">
                                 <img src="./img/banner3.jpg" alt="">
                             </a>
-                        <div class="blog_card_header_info">
-                            <a href="#">Soup</a>
-                            <span class="blog_card_icon">
-                                <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
-                                10 Min Cook
-                            </span>
-                        </div>
+                            <div class="blog_card_header_info">
+                                <a href="#">Soup</a>
+                                <span class="blog_card_icon">
+                                    <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
+                                    10 Min Cook
+                                </span>
+                            </div>
                         </div>
                         <div class="blog_card_body p-0">
                             <a href="#" class="blog_desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
-                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                vitae sit.</p>
                             <div class="blog_footer">
                                 <div class="blog_footer_ava">
                                     <a href="#"><img src="./img/team2.jpg" alt="" class="post_img img img-fluid"></a>
@@ -392,18 +472,19 @@
                             <a class="blog_card_image" href="#">
                                 <img src="./img/banner1.jpg" alt="">
                             </a>
-                        <div class="blog_card_header_info">
-                            <a href="#">Drinks</a>
-                            <span class="blog_card_icon">
-                                <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
-                                15 Min Cook
-                            </span>
-                        </div>
+                            <div class="blog_card_header_info">
+                                <a href="#">Drinks</a>
+                                <span class="blog_card_icon">
+                                    <span class="fa fa-clock-four mr-2" aria-hidden="true"></span>
+                                    15 Min Cook
+                                </span>
+                            </div>
                         </div>
                         <div class="blog_card_body p-0">
                             <a href="#" class="blog_desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
-                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <p class="primary_paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                vitae sit.</p>
                             <div class="blog_footer">
                                 <div class="blog_footer_ava">
                                     <a href="#"><img src="./img/team3.jpg" alt="" class="post_img img img-fluid"></a>
@@ -417,16 +498,103 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="Testimonial">
+        <div class="container">
+            <div class="testimonial__title">
+                <h6 class="primary_title"> Testimonials</h6>
+                <h3 class="secondary_title">What People Say</h3>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <a href="#">
+                                <img src="./img/layout6-img11.jpg" alt="">
+                            </a>
+                            <i class="fa-solid fa-quote-left my-3 font-italic"></i>
+                            <div class="person__comment">
+                                <h3 class="font-italic text-dark font-weight-bold my-3">OMG! I cannot believe. It's
+                                    Awesome"</h3>
+                                <p class="primary_paragraph my-3">My new site is so much faster and easier to work with
+                                    than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <h4 class="text-dark font-weight-bold ">Johnson william</h4>
+                                <p class="primary_paragraph">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <a href="#">
+                                <img src="./img/layout6-img12.jpg" alt="">
+                            </a>
+                            <i class="fa-solid fa-quote-left my-3 font-italic"></i>
+                            <div class="person__comment">
+                                <h3 class="font-italic text-dark font-weight-bold my-3">Simply the best. Better than all
+                                    the rest."</h3>
+                                <p class="primary_paragraph my-3">My new site is so much faster and easier to work with
+                                    than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <h4 class="text-dark font-weight-bold ">Alexander Sakura</h4>
+                                <p class="primary_paragraph">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <a href="#">
+                                <img src="./img/layout6-img13.jpg" alt="">
+                            </a>
+                            <i class="fa-solid fa-quote-left my-3 font-italic"></i>
+                            <div class="person__comment">
+                                <h3 class="font-italic text-dark font-weight-bold my-3">OMG! I cannot believe. It's
+                                    Awesome"</h3>
+                                <p class="primary_paragraph my-3">My new site is so much faster and easier to work with
+                                    than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <h4 class="text-dark font-weight-bold ">John Wilson</h4>
+                                <p class="primary_paragraph">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <a href="#">
+                                <img src="./img/layout6-img##.jpg" alt="Placeholder image">
+                            </a>
+                            <i class="fa-solid fa-quote-left my-3 font-italic"></i>
+                            <div class="person__comment">
+                                <h3 class="font-italic text-dark font-weight-bold my-3">OMG! I cannot believe. It's
+                                    Awesome"</h3>
+                                <p class="primary_paragraph my-3">My new site is so much faster and easier to work with
+                                    than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <h4 class="text-dark font-weight-bold ">Julia Skura</h4>
+                                <p class="primary_paragraph">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <section class="Testimonial"></section>
     <footer>
-        <div class="container first__footer__container">
+        <div class="container py-lg-4 first__footer__container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <h3 class="Diner__footer">Diner</h3>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
                     <div class="contact_item">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
@@ -434,8 +602,8 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                 </div>
-                <div class="col-2 col__between">
-                    <h3>Useful links</h3>
+                <div class="col-6 col__between col-lg-2 col-md-6">
+                    <h3 class="mt-lg-0 mt-3">Useful links</h3>
                     <div class="detail_option">
                         <a href="#">About Us</a>
                         <a href="#">Services</a>
@@ -444,8 +612,8 @@
                         <a href="#">Contact Us</a>
                     </div>
                 </div>
-                <div class="col-2 col__between">
-                    <h3>More info</h3>
+                <div class="col-6 col__between col-lg-2 col-md-6">
+                    <h3 class="mt-lg-0 mt-3">More info</h3>
                     <div class="detail_option">
                         <a href="#">History</a>
                         <a href="#">Vision & Value</a>
@@ -454,10 +622,10 @@
                         <a href="#">Support</a>
                     </div>
                 </div>
-                <div class="col-4">
-                    <h3>Subscribe to our Newsletter</h3>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <h3 class="mt-lg-0 mt-3">Subscribe to our Newsletter</h3>
                     <p>Enter your email and receive the latest news, updates and special offers from us.</p>
-                    <form class="box_contact" >
+                    <form class="box_contact">
                         <input type="email" placeholder="Your Email Address">
                         <button>Subscribe Now</button>
                     </form>
@@ -467,25 +635,78 @@
         <hr>
         <div class="container second__footer__container">
             <div class="row footer__sub">
-                <div class="col-8">
+                <div class="col-12 col-lg-8 ">
                     <p>© 2021 Diner. All rights reserved. Design by <span><a href="#">W3Layouts</a></span> </p>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="row row__last">
-                        <div class="col detail_option"> <a href="#">Carrers</a> </div>
-                        <div class="col-5 detail_option"> <a href="#">Privacy Policy</a> </div>
-                        <div class="col-4 detail_option"> <a href="#">Contact us</a> </div>
+                        <div class="col-lg-3 col detail_option"> <a href="#">Carrers</a> </div>
+                        <div class="col-lg-5 col detail_option"> <a href="#">Privacy Policy</a> </div>
+                        <div class="col-lg-4 col detail_option"> <a href="#">Contact us</a> </div>
                     </div>
                 </div>
             </div>
         </div>
-         
+
     </footer>
 
     <!-- ====jquery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- ====BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ====swiper-bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- ====CountUp -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- Magnific Popup core JS file -->
+    <script src="./js/magnific.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+    </script>
     <!-- ====js -->
     <script src="./js/main.js"></script>
 </body>

@@ -9,6 +9,7 @@ a, a:hover{
     letter-spacing: 1px;
     color:  #ff6600;
     font-family: 'Pacifico', cursive;
+    text-align: center;
 }
 
 .secondary_title{
@@ -17,6 +18,7 @@ a, a:hover{
     font-weight: 600;
     color: #232121;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .primary_paragraph{
@@ -58,8 +60,6 @@ a, a:hover{
         line-height: 40px;
     }
 }
-
-
 /* About us css */
 
 
@@ -68,7 +68,9 @@ a, a:hover{
     background-color: #ff6600;
     color: #ffdfc9;
 }
-
+.dark .Statistic{
+    background-color: #ff6600ba;
+}
 .statistic_img{
     background: url(../img/banner3.jpg) no-repeat center;
     background-size: cover;
@@ -156,6 +158,9 @@ a, a:hover{
 /* News css */
 .News{
     background: #f7f7f7;
+}
+.dark .News{
+    background-color: rgb(45, 45, 45);
 }
 .news-img{
     position: relative;
@@ -282,6 +287,12 @@ a, a:hover{
 }
 
 /* BLOG CSS */
+.Blog{
+    background-color: #f7f7f7;
+}
+.dark .Blog{
+    background-color: black;
+}
 .blog-card{
     word-wrap: break-word;
     background-color: transparent;
@@ -289,7 +300,6 @@ a, a:hover{
     border: none;
     border-radius: 0;
 }
-
 .blog_card_header{
     position: relative;
     border: none;
@@ -342,7 +352,9 @@ a, a:hover{
     margin-bottom: 15px;
     transition: .3s ease;
 }
-
+.dark .blog_desc{
+    color: #ff6600;
+}
 @media (max-width: 991px){
     .blog_desc {
         font-size: 20px;
@@ -365,7 +377,9 @@ a, a:hover{
     color: #232121;
     letter-spacing: .02em;
 }
-
+.dark .blog_footer_ava a{
+    color: gray;
+}
 .post_img{
     margin-right: 10px;
     width: 40px;
@@ -404,14 +418,12 @@ a, a:hover{
     color: #fff;
     margin-bottom: 10px;
 }
-
-@media (max-width: 800px){
+@media (max-width: 1190px){
     .carousel h3{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 48px;
+        line-height: 58px;
     }
 }
-
 @media (max-width: 992px){
     .carousel h3{
         font-size: 44px;
@@ -419,13 +431,18 @@ a, a:hover{
     }
 }
    
-@media (max-width: 1190px){
+@media (max-width: 800px){
     .carousel h3{
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 40px;
+        line-height: 50px;
     }
 }
-
+@media (max-width: 480.98px) {
+    .carousel h3, .deli__content h3{
+      font-size: 28px;
+      line-height: 38px;
+    }
+}
 .carousel p{
     font-size: 16px;
     line-height: 28px;
