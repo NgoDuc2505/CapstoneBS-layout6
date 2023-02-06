@@ -97,6 +97,15 @@ a, a:hover{
     }
 }
 
+.Statistic .statistic_content .primary_title{
+    text-align: left;
+}
+
+
+.Statistic .statistic_content .secondary_title{
+    text-align: left;
+}
+
 .primary_title.reverse{
     color: white;
 }
@@ -483,3 +492,71 @@ header{
         margin-top: 60px;
     }
 }   
+
+
+/* DARK THEME */
+.dark .AboutUs .secondary_title{
+    color: #eee;
+}
+
+.dark .AboutUs .primary_paragraph{
+    color: #c2d0da;
+}
+
+.dark .Statistic{
+    background-color: #ff6600;
+}
+
+.dark .Statistic .secondary_title.reverse{
+    color: #eee;
+}
+
+.dark .statistic_link{
+    color: #eee;
+}
+
+.dark .items .items-box{
+    background-color: #232220;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .items .items-box p{
+    color: #c2d0da;
+}
+
+.dark .items .items-info h4 a{
+    color: #eee;
+}
+
+.dark .items .items-info h4 a:hover{
+    color: #ff6600;
+}
+
+.dark .items .icon{
+    background-color: #282828;
+}
+
+.dark .Blog {
+    background-color: #282828;
+}
+
+.dark .Blog p{
+    color: #c2d0da;
+}
+
+.dark .Blog a{
+    color: #eee;
+}
+
+.dark .Blog span{
+    color: #eee;
+}
+
+.dark .Blog .blog_footer .blog_read_more:hover a{
+    color: #ff6600;
+}
+
+.dark .Blog .blog_footer .blog_read_more:hover span{
+    color: #ff6600;
+}
+
