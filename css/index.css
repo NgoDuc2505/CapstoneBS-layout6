@@ -177,6 +177,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
+  color: #161c2db3;
 }
 
 /* ====end of search */
