@@ -495,11 +495,11 @@ header{
 
 
 /* DARK THEME */
-.dark .AboutUs .secondary_title{
+.dark .secondary_title{
     color: #eee;
 }
 
-.dark .AboutUs .primary_paragraph{
+.dark .primary_paragraph{
     color: #c2d0da;
 }
 
@@ -534,6 +534,10 @@ header{
 
 .dark .items .icon{
     background-color: #282828;
+}
+
+.dark .items-box:hover .icon{
+    background-color: #ff6600;
 }
 
 .dark .Blog {
