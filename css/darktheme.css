@@ -38,6 +38,9 @@
 .dark .topnav .form-inline .searchTab {
     background-color: #232220;
 }
+.dark .topnav .fa-magnifying-glass{
+    color: #c2d0da;
+}
 
 /* END Header dark theme */ 
 
@@ -180,8 +183,11 @@
 
 .dark .contact_item i{
     background-color: #232220;
+    transition: all .3s;
 }
-  
+.dark .contact_item i:hover{
+    background-color: #ff6600;
+}
 
 .dark .box_contact input{
     background-color: #232220;
