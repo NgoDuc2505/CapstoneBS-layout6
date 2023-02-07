@@ -238,11 +238,14 @@ hr {
   height: 36px;
   margin-right: 10px;
   border-radius: 6px;
-  background-color: #232220;
+  background-color: #fff;
   color: #ff6600;
   line-height: 36px;
   text-align: center;
   transition: all .5s;
+}
+.dark .contact_item i{
+  background-color: #232220;
 }
 
 .contact_item i:hover {
@@ -271,10 +274,13 @@ hr {
   font-size: 18px;
   line-height: 28px;
   outline: none;
-  background-color: #232220;
+  background-color: #fff;
   color: #c2d0da;
   border-radius: 6px;
   border: 1px solid transparent;
+}
+.dark .box_contact input{
+  background-color: #232220;
 }
 
 .box_contact input:focus {
@@ -361,7 +367,7 @@ hr {
   margin: 0 10px;
 }
 .dark#myBody .swiper-pagination-bullet{
-  background-color: black;
+  background-color: #d8d8d8;
   opacity: 1;
 }
 #myBody .Testimonial .swiper-pagination-bullet {
@@ -400,7 +406,7 @@ hr {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #100f13a8;
   position: absolute;
   top: 0;
   left: 0;
@@ -471,8 +477,8 @@ hr {
   color: #c2d0da;
 }
 .deli__item:hover{
-  transform: translateY(-7px);
-  box-shadow: rgb(1 1 1 / 5%) 1px 1px 20px 10px;
+  transform: translateY(-0.25rem);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
 .dark .deli__item:hover{
   box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
