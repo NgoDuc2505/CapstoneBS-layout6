@@ -28,6 +28,7 @@ header {
   height: 100vh;
   z-index: -1;
   scale: 95%;
+  position: fixed;
 }
 
 .topnav #myLinks .iconClose {
