@@ -9,10 +9,11 @@ function myFunction() {
       x.style.zIndex = "100";
       x.style.scale = "100%"
     }
-  }
+}
+
   document.getElementById("switchButton").onclick = function () {
-    document.getElementById("myBody").classList.toggle("dark");
-};
+    document.getElementById("myBody").classList.toggle("dark");}
+
 
 
 // When the user scrolls down 20px from the top of the document, show the button
