@@ -6,7 +6,7 @@ function myFunction() {
       x.style.scale = "95%"
     } else {
       x.style.opacity = "1";
-      x.style.zIndex = "2";
+      x.style.zIndex = "100";
       x.style.scale = "100%"
     }
   }
