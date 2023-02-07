@@ -456,7 +456,7 @@ header{
 
 
 .Deli__carousel {
-  background-image: url('/img/layout6-img10.jpg');
+  background-image: url(../img/layout6-img10.jpg);
   background-size: cover;
   background-position: center;
   padding: 100px 15px;
@@ -564,7 +564,7 @@ header{
 
 /* ===MAGNIFIC VIDEO==== */
 .videoVimeo {
-  background-image: url(/img/layout6-img03.jpg);
+  background-image: url(../img/layout6-img03.jpg);
   background-size: cover;
   background-position: center;
   min-height: 500px;
