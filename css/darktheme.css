@@ -1,0 +1,193 @@
+/* DARK THEME */
+/* global dark theme */ 
+.dark .secondary_title{
+    color: #eee;
+}
+
+.dark .primary_paragraph{
+    color: #c2d0da;
+}
+
+.dark#myBody {
+    background-color: #232220;
+}
+  
+.dark p {
+    color: #fff;
+}
+  
+.dark h3 {
+    color: #c9d0d5;
+}
+  
+.dark #switchButton .fa-sun {
+    display: block;
+    color: #fff;
+}
+  
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+
+/* end dark theme */ 
+
+
+/* Header dark theme */ 
+
+.dark .topnav .form-inline .searchTab {
+    background-color: #232220;
+}
+
+/* END Header dark theme */ 
+
+/* statistic dark theme */ 
+.dark .Statistic{
+    background-color: #ff6600;
+}
+
+.dark .Statistic .secondary_title.reverse{
+    color: #eee;
+}
+
+.dark .statistic_link{
+    color: #eee;
+}
+
+/* end statistic dark theme */ 
+
+/* News dark theme */ 
+.dark .News{
+    background-color: rgb(45, 45, 45);
+}
+/* END News dark theme */
+
+/* Items dark theme */ 
+.dark .items .items-box{
+    background-color: #232220;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .items .items-box p{
+    color: #c2d0da;
+}
+
+.dark .items .items-info h4 a{
+    color: #eee;
+}
+
+.dark .items .items-info h4 a:hover{
+    color: #ff6600;
+}
+
+.dark .items .icon{
+    background-color: #282828;
+}
+
+.dark .items-box:hover .icon{
+    background-color: #ff6600;
+}
+/* End Items dark theme */ 
+
+/*  Deliciousness dark theme */ 
+.dark .Deliciousness{
+    background-color: #232220;
+}
+
+.dark .deli__item{
+    background-color: #232220;
+    color: #c2d0da;
+}
+
+.dark .deli__item:hover{
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+.dark .countUpDeli{
+    color: #eee;
+}
+
+/*  END Deliciousness dark theme */ 
+
+/* Blog dark theme */ 
+.dark .Blog {
+    background-color: #282828;
+}
+
+
+.dark .Blog p{
+    color: #c2d0da;
+}
+
+.dark .Blog a{
+    color: #eee;
+}
+
+.dark .Blog span{
+    color: #eee;
+}
+
+.dark .Blog .blog_footer .blog_read_more:hover a{
+    color: #ff6600;
+}
+
+.dark .Blog .blog_footer .blog_read_more:hover span{
+    color: #ff6600;
+}
+
+.dark .blog_desc{
+    color: #ff6600;
+}
+
+.dark .blog_footer_ava a{
+    color: gray;
+}
+
+/* End Blog dark theme */ 
+
+
+/* testimonial dark theme */
+.dark .Testimonial {
+    background-color: #232220;
+}
+
+.dark .person__comment h3,
+.dark .person__comment h4 {
+  color: #fff !important;
+}
+
+.dark#myBody .swiper-pagination-bullet{
+    background-color: #d8d8d8;
+    opacity: 1;
+}
+
+.dark#myBody .Testimonial .swiper-pagination-bullet-active {
+    background-color: #ff6600;
+  }
+  
+
+/* End testimonial dark theme */
+
+/* Footer dark theme */
+
+.dark footer p{
+    color: #a5a2a1;
+}
+
+.dark footer h3{
+    color: white;
+}
+
+.dark .contact_item i{
+    background-color: #232220;
+}
+  
+
+.dark .box_contact input{
+    background-color: #232220;
+}
+  
+
+.dark .footer__sub p{
+    color: white;
+}
