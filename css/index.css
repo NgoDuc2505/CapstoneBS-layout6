@@ -144,7 +144,7 @@ header {
 
 .dark #switchButton .fa-sun {
   display: block;
-  color: #232220;
+  color: #fff;
 }
 
 .dark #switchButton .fa-moon {
@@ -168,12 +168,16 @@ header {
   background-color: #fff;
   color: #c2d0da;
 }
+.dark .topnav .form-inline .searchTab {
+  background-color: #232220;
+}
 
 .topnav .fa-magnifying-glass {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
+  color: #161c2db3;
 }
 
 /* ====end of search */
@@ -193,12 +197,18 @@ footer a {
 
 .first__footer__container {
   padding: 48px 0;
+  margin-bottom: 55px;
 }
 
 footer p {
   color: #a5a2a1;
 }
-
+.dark footer p{
+  color: #a5a2a1;
+}
+.dark footer h3{
+  color: white;
+}
 footer h3 {
   font-size: 22px;
   line-height: 28px;
@@ -220,7 +230,7 @@ hr {
 }
 
 .second__footer__container {
-  padding: 1.2em 0;
+  padding: 0.2em 0;
 }
 
 .contact_item i {
@@ -248,12 +258,13 @@ hr {
 .detail_option a:hover {
   color: #ff6600;
 }
-
 .col__between .detail_option {
   display: flex;
   flex-direction: column;
 }
-
+.footer__sub .detail_option{
+  text-align: center;
+}
 .box_contact input {
   width: 100%;
   padding: 14px 20px;
@@ -299,6 +310,9 @@ hr {
 .footer__sub span a:hover {
   color: #c2d0da;
 }
+.dark .footer__sub p{
+  color: white;
+}
 
 /* ====TESTIMONIAL */
 .Testimonial {
@@ -306,12 +320,12 @@ hr {
 }
 
 .dark .Testimonial {
-  background-color: rgb(45, 45, 45);
+  background-color: #232220;
 }
 
 .dark .person__comment h3,
 .dark .person__comment h4 {
-  color: #ff6600 !important;
+  color: #fff !important;
 }
 
 .testimonial__title {
@@ -343,7 +357,13 @@ hr {
   font-size: 25px;
   color: #ff6600;
 }
-
+#myBody .swiper-pagination-bullet{
+  margin: 0 10px;
+}
+.dark#myBody .swiper-pagination-bullet{
+  background-color: black;
+  opacity: 1;
+}
 #myBody .Testimonial .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -364,7 +384,7 @@ hr {
   padding-bottom: 5rem;
 }
 .dark .Deliciousness{
-  background-color: rgb(45, 45, 45);
+  background-color: #232220;
 }
 .Deli__carousel {
   background-image: url('/img/layout6-img10.jpg');
@@ -446,14 +466,17 @@ hr {
   transition: all .5s;
   height: 100%;
 }
+.dark .deli__item{
+  background-color: #232220;
+  color: #c2d0da;
+}
 .deli__item:hover{
   transform: translateY(-7px);
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 20px 10px;
 }
-.dark .deli__item{
-  box-shadow: rgb(0 0 0) 1px 1px 20px 0px;
+.dark .deli__item:hover{
+  box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
-
 .deli__item span i {
   font-size: 26px;
   border-radius: 50%;
@@ -464,14 +487,13 @@ hr {
   text-align: center;
   background-color: #ff6600;
 }
-.dark .deli__item p{
-  color: #232220;
-}
-
 .countUpDeli {
   font-size: 2.6em;
   font-weight: 600;
   color: black;
+}
+.dark .countUpDeli{
+  color: #eee;
 }
 
 .deli__detail {
@@ -521,14 +543,22 @@ hr {
   background-color: #ff6600;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 993px){
   .footer__sub {
     text-align: center;
   }
-}
-@media (max-width: 993px){
   .deli__detail{
     margin-top: 50px;
+  }
+  .first__footer__container p{
+    line-height: 26px;
+  }
+  .contact_item{
+    display: flex;
+    justify-content: center;
+  }
+  .first__footer__container{
+    margin-bottom: 0;
   }
 }
 @media (max-width: 577px) {
